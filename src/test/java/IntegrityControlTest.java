@@ -109,4 +109,18 @@ public class IntegrityControlTest{
 
     }
 
+
+
+
+    @Test
+    public void should1234567812345670isvalid() throws ArgumentException {
+
+
+        IntegrityControl testControl = new IntegrityControl();
+        boolean result = testControl.calculateLuhn("1234567812345670");
+
+        Assertions.assertThat(result).isTrue();
+
+    }
+
 }
